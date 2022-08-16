@@ -2,7 +2,7 @@ import React from "react";
 import { SafeAreaView, StyleSheet, TextInput, Text, Button } from "react-native";
 
 const UselessTextInput = () => {
-  const [char, onChangeChar] = React.useState("Ingrese texto");
+  const [char, onChangeChar] = React.useState("");
   const [text, setTexto] = React.useState(null);
   
 
@@ -11,7 +11,7 @@ const UselessTextInput = () => {
       <TextInput
         style={styles.input}
         onChangeText={onChangeChar}
-        placeholder={text}
+        placeholder="Ingrese texto"
       />
       <text>{char.length}</text>
       <Button
